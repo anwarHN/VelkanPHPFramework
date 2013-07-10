@@ -1,0 +1,1 @@
+<h1><?php echo velkan::$lang["err_msg"]["noController"];?></h1>

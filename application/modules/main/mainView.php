@@ -1,0 +1,1 @@
+<h1>Bienvenido a <?php velkan::_getAppName();?></h1>

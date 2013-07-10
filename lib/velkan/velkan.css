@@ -1,0 +1,120 @@
+@CHARSET "ISO-8859-1";
+/*
+Velkan CSS Framework
+
+Coleccion de clases CSS específicas para el funcionamiento de Velkan
+*/
+
+/*Generales*/
+
+.clear{
+	clear:both;
+}
+
+/*Formularios*/
+label.error{
+	/*color: #b94a48;*/
+	color: red;
+	margin-left:10px;
+	display:inline-block;
+}
+label.error:hover,
+label.error:focus {
+  color: #953b39;
+}
+
+span.velkan-read-only{
+	display:inline-block;
+	padding-top:5px;
+	margin-bottom:5px;
+	line-height:20px;
+}
+
+img.velkan-icon{
+	display:inline block;
+	width:12px;
+	height:12px;
+}
+
+/*Velkan grid*/
+.velkan-grid{
+    page-break-inside: avoid;
+    padding: 0;
+	width:100%;
+}
+
+.velkan-grid table{
+	/*Se sobre escribe la propiedad de bootstrap para que no se vea un espacion entre la tabla y el footer*/
+	margin:0;
+}
+
+.velkan-grid-column-header{
+	cursor:pointer;
+}
+
+.velkan-grid-column-header-sorted-both{
+	background:url(datagrid/sort_both.png) no-repeat center right;
+}
+
+.velkan-grid-column-header-sorted-asc{
+	background:url(datagrid/sort_asc.png) no-repeat center right;
+}
+
+.velkan-grid-column-header-sorted-desc{
+	background:url(datagrid/sort_desc.png) no-repeat center right;
+}
+
+.velkan-grid-column-filter{
+	background-color: #f2f2f2;
+	padding:0;
+}
+
+.velkan-grid-column-filter > *, .velkan-grid-column-filter div input{
+	margin:0;
+}
+
+.velkan-grid table tbody tr td .progress{
+	margin:0;
+}
+
+.velkan-grid div.title{
+	font-weight: bold;
+	
+	padding-bottom:5px;
+	padding-top:5px;
+	
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.velkan-grid div.footer{
+	/*border-top:1px solid #dddddd;*/
+}
+
+.velkan-grid div.footer .paginator .pagination{
+	/*Se sobre escribe la propiedad de bootstrap*/
+	margin:0;
+}
+
+.velkan-grid div.footer .options{
+	float:left;
+	padding-top:3px;
+	width:40%;
+}
+
+.velkan-grid div.footer .options .btn-toolbar{
+	margin:0;
+}
+
+.velkan-grid div.footer .paginator{
+	float:right;
+	padding-top:3px;
+	width:40%;
+}
+
+.velkan-grid .error{
+	color: #c09853;
+	background-color: #fcf8e3;
+	padding:5px 5px 5px 5px;
+	border-top:1px solid #dddddd;
+}
